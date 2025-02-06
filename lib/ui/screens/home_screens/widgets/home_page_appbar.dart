@@ -12,6 +12,7 @@ class HomePageAppbar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  AppBar(
+      backgroundColor: AllColors.white,
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

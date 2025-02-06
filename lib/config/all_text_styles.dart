@@ -19,4 +19,10 @@ class AllTextStyles{
       color: AllColors.textGrey,
       fontFamily: 'Roboto-Regular'
     );
+
+    static TextStyle tabTextStyle = TextStyle(
+      fontSize: 14,
+      color: AllColors.tabTextGrey,
+      fontFamily: 'Roboto-Regular'
+    );
 }

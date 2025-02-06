@@ -1,5 +1,8 @@
 class AllImages{
   //images
+  static String userImage = 'assets/images/user_image.jpg';
+  static String postImage = 'assets/images/post_image.jpg';
+
 
   // icons
   static String likeIcon = 'assets/icons/like_icon.svg';
