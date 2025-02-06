@@ -1,4 +1,4 @@
-import 'package:dribble_parentpal/ui/widgets/splash_screen.dart';
+import 'package:dribble_parentpal/ui/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
