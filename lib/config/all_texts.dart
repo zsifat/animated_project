@@ -11,5 +11,8 @@ class AllTexts{
   static String likes = 'Likes';
   static String comments = 'Comments';
   static String share = 'Share';
+
+  static String appName = 'ParentPal';
+  static String motto = 'Connect, Share, Care!';
   
 }

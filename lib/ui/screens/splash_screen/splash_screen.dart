@@ -1,5 +1,10 @@
+import 'package:dribble_parentpal/config/all_colors.dart';
+import 'package:dribble_parentpal/config/all_images.dart';
+import 'package:dribble_parentpal/config/all_text_styles.dart';
+import 'package:dribble_parentpal/config/all_texts.dart';
+import 'package:dribble_parentpal/ui/screens/hub_screens/hub_screen.dart';
+import 'package:dribble_parentpal/ui/screens/main-screen/main_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,11 +18,11 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xFF2B3760), // Background color similar to the image
+      backgroundColor: AllColors.splashBgColorBlue,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Spacer(),
+          const Spacer(),
           Center(
             child: ColorFiltered(
               colorFilter: const ColorFilter.mode(
@@ -25,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 BlendMode.multiply,
               ),
               child: Image.asset(
-                'assets/images/splash_image.jpg',
+                AllImages.splashImage,
                 width: size.width * 0.8,
                 height: size.height * 0.5,
                 fit: BoxFit.cover,
@@ -33,24 +38,17 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
           ),
 
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Text(
-            'ParentPal',
-            style: TextStyle(
-              fontSize: 66,
-              fontWeight: FontWeight.w900,
-              color: Colors.white,
-            ),
+              AllTexts.appName,
+              style: AllTextStyles.splashTextStyle
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Text(
-            'Connect, Share, Care!',
-            style: TextStyle(
-              fontSize: 16,
-              color: Color(0xFFF3FEFF),
-            ),
+            AllTexts.motto,
+            style: AllTextStyles.lightRegularTextStyle,
           ),
-          Spacer(),
+          const Spacer(),
           Padding(
             padding: const EdgeInsets.only(bottom: 30),
             child: ElevatedButton(
@@ -61,14 +59,12 @@ class _SplashScreenState extends State<SplashScreen> {
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(builder: (context) => const MainScreen(),));
+              },
               child: Text(
-                "Let's start!",
-                style: TextStyle(
-                  fontSize: 14,
-                  color: Colors.black,
-                  fontWeight: FontWeight.bold,
-                ),
+                  "Let's start!",
+                  style: AllTextStyles.regularTextStyle.copyWith(fontWeight: FontWeight.w700)
               ),
             ),
           ),
