@@ -40,7 +40,7 @@ class _SearchScreenState extends State<SearchScreen> {
       ),
       body: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(15),
+            padding: const EdgeInsets.only(left: 15, top: 15),
             child: SizedBox(
                 width: width,
               child: Column(
