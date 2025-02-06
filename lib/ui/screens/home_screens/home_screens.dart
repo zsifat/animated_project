@@ -3,14 +3,14 @@ import 'package:dribble_parentpal/config/all_colors.dart';
 import 'package:dribble_parentpal/config/all_texts.dart';
 import 'package:dribble_parentpal/ui/screens/home_screens/models/post_model.dart';
 import 'package:dribble_parentpal/ui/screens/home_screens/models/tab_model.dart';
-import 'package:dribble_parentpal/ui/screens/home_screens/widgets/custom_tab_button.dart';
+import 'package:dribble_parentpal/ui/widgets/custom_tab_button.dart';
 import 'package:dribble_parentpal/ui/screens/home_screens/widgets/home_page_appbar.dart';
 import 'package:dribble_parentpal/ui/screens/home_screens/widgets/post_card.dart';
-import 'package:dribble_parentpal/ui/screens/home_screens/widgets/search_bar_widget.dart';
+import 'package:dribble_parentpal/ui/widgets/search_bar_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreens extends StatefulWidget {
-  HomeScreens({super.key});
+  const HomeScreens({super.key});
 
   @override
   State<HomeScreens> createState() => _HomeScreensState();

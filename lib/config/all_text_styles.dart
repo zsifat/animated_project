@@ -25,4 +25,10 @@ class AllTextStyles{
       color: AllColors.tabTextGrey,
       fontFamily: 'Roboto-Regular'
     );
+
+    static TextStyle hashTagTitleStyle = TextStyle(
+        fontSize: 16,
+        color: AllColors.mainBlack,
+        fontFamily: 'Roboto-Regular'
+    );
 }

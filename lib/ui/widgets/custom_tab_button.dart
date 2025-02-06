@@ -25,7 +25,7 @@ class CustomTabButton extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.only(right: 5),
         alignment: Alignment.center,
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         // height: 35,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),

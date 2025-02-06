@@ -13,9 +13,22 @@ class AllTexts{
   static String classes = 'Classes';
   static String lifeHour = 'Life Hours';
 
+  static String searchResults = 'Search Result';
+  static String matches = 'matches';
+
   static String likes = 'Likes';
   static String comments = 'Comments';
   static String share = 'Share';
+
+  static String top = 'Top';
+  static String accounts = 'Accounts';
+  static String hashtags = 'Hashtags';
+  static String posts = 'Posts';
+
+  static String hash = '#';
+  static String hashTag = 'Game for boys';
+  static String viewsCount = '1.5k';
+  static String views = 'Views';
 
   static String time = '14 min';
   static String ago = 'ago';
@@ -31,6 +44,13 @@ class AllTexts{
     TabModel(title: AllTexts.lifeHour, id: 3),
   ];
 
+  static List<TabModel> categories = [
+    TabModel(title: AllTexts.top, id: 0),
+    TabModel(title: AllTexts.accounts, id: 1),
+    TabModel(title: AllTexts.hashtags, id: 2),
+    TabModel(title: AllTexts.posts, id: 3),
+
+  ];
 
   static List<PostModel> postModel = [
     PostModel(
