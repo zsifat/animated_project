@@ -1,3 +1,5 @@
+import 'package:dribble_parentpal/ui/screens/home_screens/home_screens.dart';
+import 'package:dribble_parentpal/ui/screens/search_screen/search_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../hub_screens/hub_screen.dart';
@@ -19,8 +21,8 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   final List<Widget> _screens = [
-    const HubScreen(),
-    const HubScreen(),
+    const HomeScreens(),
+    const SearchScreen(),
     const HubScreen(),
     const HubScreen(),
     const HubScreen(),
@@ -29,7 +31,6 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print(_selectedIndex);
     return Scaffold(
       backgroundColor: Colors.white,
       body: _screens[_selectedIndex],

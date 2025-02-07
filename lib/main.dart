@@ -26,7 +26,9 @@ class MyApp extends StatelessWidget {
           scrolledUnderElevation: 0.0
         )
       ),
-      home: SearchScreen(),
+      home: SplashScreen(),
     );
   }
 }
+
+
