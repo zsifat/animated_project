@@ -2,6 +2,9 @@ class AllImages{
   //images
   static String splashImage = 'assets/images/splash_image.jpg';
 
+  static String userImage = 'assets/images/user_image.jpg';
+  static String postImage = 'assets/images/post_image.jpg';
+
 
   // icons
   static String likeIcon = 'assets/icons/like_icon.svg';
@@ -18,4 +21,7 @@ class AllImages{
   static String liveStreamIcon = 'assets/icons/live_stream.svg';
   static String rocketIcon = 'assets/icons/rocket.svg';
   static String diceIcon = 'assets/icons/dice.svg';
+  static String addIcon = 'assets/icons/add_icon.svg';
+  static String searchIcon = 'assets/icons/search_icon.svg';
+  static String closeIcon = 'assets/icons/close_icon.svg';
 }
