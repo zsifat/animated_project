@@ -5,6 +5,8 @@ class AllImages{
   static String userImage = 'assets/images/user_image.jpg';
   static String postImage = 'assets/images/post_image.jpg';
 
+  static String userProfileImage = 'assets/images/profile_image.jpg';
+
 
   // icons
   static String likeIcon = 'assets/icons/like_icon.svg';
@@ -24,4 +26,5 @@ class AllImages{
   static String addIcon = 'assets/icons/add_icon.svg';
   static String searchIcon = 'assets/icons/search_icon.svg';
   static String closeIcon = 'assets/icons/close_icon.svg';
+  static String muteIcon = 'assets/icons/mute.svg';
 }

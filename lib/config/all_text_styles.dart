@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'all_colors.dart';
 
-import 'package:dribble_parentpal/config/all_colors.dart';
-import 'package:flutter/material.dart';
-
 class AllTextStyles{
-  static TextStyle splashTextStyle =TextStyle(
+  static TextStyle splashTextStyle =const TextStyle(
     fontSize: 66,
     fontWeight: FontWeight.w900,
     fontFamily: 'Roboto-Bold',
@@ -24,8 +20,22 @@ class AllTextStyles{
       fontFamily:  'Roboto-Bold'
     );
 
+  static TextStyle userNameChat = TextStyle(
+      fontSize: 18,
+      color: AllColors.mainBlack,
+      fontFamily:  'Roboto-Bold'
+  );
+
   static TextStyle regularTextStyle = TextStyle(
     fontSize: 16,
+    color: Colors.black,
+    fontWeight: FontWeight.w400,
+    fontFamily: 'Roboto-Regular',
+  );
+
+  static TextStyle appBarTextStyle = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.w700,
     color: Colors.black,
     fontFamily: 'Roboto-Regular',
   );

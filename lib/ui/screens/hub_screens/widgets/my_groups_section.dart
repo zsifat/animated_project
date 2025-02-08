@@ -1,3 +1,4 @@
+import 'package:dribble_parentpal/config/all_texts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -12,8 +13,8 @@ Widget buildMyGroupsSection() {
       Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text("My groups", style: AllTextStyles.sectionHeadingTextStyle),
-          Text("See all", style: AllTextStyles.regularTextStyle),
+          Text(AllTexts.myGroups, style: AllTextStyles.sectionHeadingTextStyle),
+          Text(AllTexts.seeAll, style: AllTextStyles.regularTextStyle),
         ],
       ),
       const SizedBox(height: 16),
@@ -31,7 +32,7 @@ Widget buildMyGroupsSection() {
           return buildGroupCard(
             "Team sports",
             "+11 new posts",
-            index%2==0 ? Color(0xFFFCE8E5) : Color(0xFFFDE4FF),
+            index%2==0 ? AllColors.lightPeach : AllColors.softPink,
           );
         },
       ),
@@ -50,8 +51,8 @@ Widget buildGroupCard(String title, String subtitle, Color color) {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-          padding: EdgeInsets.all(8),
-          decoration: BoxDecoration(
+          padding: const EdgeInsets.all(8),
+          decoration: const BoxDecoration(
               borderRadius: BorderRadius.all(Radius.elliptical(15, 15)),
               color: Colors.white
           ),
@@ -71,12 +72,12 @@ Widget buildGroupCard(String title, String subtitle, Color color) {
             Expanded(child: buildProfileStack()),
             IconButton.filledTonal(
                 style: IconButton.styleFrom(
-                    backgroundColor: Color(0xFFE38675),
-                    fixedSize: Size(44, 44)
+                    backgroundColor: AllColors.dustyCoral,
+                    fixedSize: const Size(44, 44)
                 ),
                 onPressed: () {
 
-                }, icon: Icon(Icons.arrow_forward))
+                }, icon: const Icon(Icons.arrow_forward))
           ],
         )
       ],
@@ -87,7 +88,7 @@ Widget buildProfileStack() {
   return Stack(
     children: [
       Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Colors.white,
           shape: BoxShape.circle,
           boxShadow: [
@@ -98,10 +99,10 @@ Widget buildProfileStack() {
             ),
           ],
         ),
-        padding: EdgeInsets.all(1),
+        padding: const EdgeInsets.all(1),
         child: ClipOval(
           child: Image.asset(
-            'assets/images/profile_image.jpg',
+            AllImages.userProfileImage,
             fit: BoxFit.cover,
             width: 40,
             height: 40,
@@ -111,7 +112,7 @@ Widget buildProfileStack() {
       Positioned(
         left: 24,
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.white,
             shape: BoxShape.circle,
             boxShadow: [
@@ -122,10 +123,10 @@ Widget buildProfileStack() {
               ),
             ],
           ),
-          padding: EdgeInsets.all(1),
+          padding: const EdgeInsets.all(1),
           child: ClipOval(
             child: Image.asset(
-              'assets/images/profile_image.jpg',
+              AllImages.userProfileImage,
               fit: BoxFit.cover,
               width: 40,
               height: 40,
@@ -136,7 +137,7 @@ Widget buildProfileStack() {
       Positioned(
         left: 48,
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.white,
             shape: BoxShape.circle,
             boxShadow: [
@@ -147,11 +148,11 @@ Widget buildProfileStack() {
               ),
             ],
           ),
-          padding: EdgeInsets.all(1),
+          padding: const EdgeInsets.all(1),
           child: ClipOval(
               child: CircleAvatar(
                 backgroundColor: AllColors.softCoral,
-                child: Text('+96',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),),
+                child: Text('+96',style: AllTextStyles.regularTextStyle,),
               )
           ),
         ),

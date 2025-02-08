@@ -23,6 +23,15 @@ class AllTexts{
   static String appName = 'ParentPal';
   static String motto = 'Connect, Share, Care!';
 
+  static String search = "Search";
+  static String profile = 'Profile';
+  static String home = 'Home';
+  static String message ='Message';
+
+  static String hub = "Hub";
+  static String myGroups = "My groups";
+  static String seeAll = "See all";
+
   static String top = 'Top';
   static String accounts = 'Accounts';
   static String hashtags = 'Hashtags';
@@ -35,6 +44,9 @@ class AllTexts{
 
   static String time = '14 min';
   static String ago = 'ago';
+
+  static String directMessage = 'Direct messages';
+  static String videoCall = 'Video Call';
 
   static int count = 24;
 
@@ -65,5 +77,17 @@ class AllTexts{
         postImage: AllImages.postImage,
         likes: AllTexts.count,
         comments: AllTexts.count),
+  ];
+
+  static List<Map<String, dynamic>> hubCategories = [
+    {"icon": AllImages.musicIcon, "label": "Music"},
+    {"icon": AllImages.videoIcon, "label": "Video"},
+    {"icon": AllImages.booksIcon, "label": "Books"},
+    {"icon": AllImages.foodIcon, "label": "Food"},
+    {"icon": AllImages.healthIcon, "label": "Health"},
+    {"icon": AllImages.toysIcon, "label": "Toys"},
+    {"icon": AllImages.educationIcon, "label": "Education"},
+    {"icon": AllImages.liveStreamIcon, "label": "Live streams"},
+    {"icon": AllImages.rocketIcon, "label": "Food"},
   ];
 }

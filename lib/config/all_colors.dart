@@ -11,5 +11,8 @@ class AllColors{
   static Color white = const Color(0xFFFFFFFF);
   static Color searchBackGrey = const Color(0xFFF2F2F2);
   static Color tabTextGrey = const Color(0xFF717171);
+  static Color softPink = const Color(0xFFFDE4FF);
+  static Color lightPeach = const Color(0xFFFCE8E5);
+  static Color dustyCoral = const Color(0xFFE38675);
 
 }

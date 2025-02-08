@@ -1,7 +1,7 @@
-import 'package:dribble_parentpal/ui/screens/hub_screens/widgets/grid_items.dart';
-import 'package:dribble_parentpal/ui/screens/hub_screens/widgets/my_groups.dart';
+import 'package:dribble_parentpal/ui/screens/hub_screens/widgets/category_grid_items.dart';
+import 'package:dribble_parentpal/ui/screens/hub_screens/widgets/hub_screen_appbar.dart';
+import 'package:dribble_parentpal/ui/screens/hub_screens/widgets/my_groups_section.dart';
 import 'package:flutter/material.dart';
-import 'package:dribble_parentpal/config/all_text_styles.dart';
 
 
 class HubScreen extends StatelessWidget {
@@ -9,32 +9,22 @@ class HubScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white, // Light background color
-      appBar: AppBar(
-        scrolledUnderElevation: 0,
-        backgroundColor: Colors.white,
-        elevation: 0,
-        automaticallyImplyLeading: false, // Removes back button
-        title: Text(
-          "Hub",
-          style: AllTextStyles.regularTextStyle.copyWith(fontSize: 24,fontWeight: FontWeight.w700),
-        ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search, color: Colors.black),
-            onPressed: () {},
-          ),
-        ],
+      appBar: const PreferredSize(
+        preferredSize: Size.fromHeight(60),
+        child: HubScreenAppbar(),
       ),
-      body: Padding(
+      body: Container(
         padding: const EdgeInsets.all(10.0),
+        width: size.width,
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               buildCategoryGrid(),
-              const SizedBox(height: 40),
+              const SizedBox(height: 24),
               buildMyGroupsSection(),
             ],
           ),

@@ -1,6 +1,3 @@
-import 'package:dribble_parentpal/ui/screens/main-screen/main_screen.dart';
-import 'package:dribble_parentpal/ui/screens/home_screens/home_screens.dart';
-import 'package:dribble_parentpal/ui/screens/search_screen/search_screen.dart';
 import 'package:dribble_parentpal/ui/screens/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:dribble_parentpal/config/all_colors.dart';
@@ -26,7 +23,7 @@ class MyApp extends StatelessWidget {
           scrolledUnderElevation: 0.0
         )
       ),
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }
